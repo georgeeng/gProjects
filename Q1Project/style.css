@@ -1,0 +1,46 @@
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+	background-image: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-434390.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.heading{
+/*	margin: auto;
+	background-image: url("https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/512/clouds.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 200px;
+	width: 200px;
+	border: 1px;
+	opacity: 0.7;*/
+}
+
+.locations{
+	margin: auto;
+    width: 50%;
+    border: 3px solid grey;
+    padding: 10px;
+}
+
+#map {
+	margin: auto;
+	margin-top: 30px;
+	height: 300px;
+	width: 900px;
+	display: block;
+ 	cursor: -webkit-zoom-in;
+	cursor: zoom-in;
+	position: relative;
+	transition: opacity .4s;
+	box-shadow: 10px 10px 5px black;
+}
+
+#bottom {
+	width: 100%;
+	text-align: center;
+}

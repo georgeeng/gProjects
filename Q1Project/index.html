@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Meet Me 1/2 Way</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css" media="screen,projection">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+</head>
+
+<body>
+    <nav>
+        <div class="navbar-wrapper container">
+            <p>
+                <a href="https://reddit.com">Places Nearby</a>
+            </p>
+        </div>
+    </nav>
+    <div>
+        <h3 align="center">
+			<div class="heading">
+				<p>Meet 1/2 Way</p>
+			</div>
+		</h3>
+    </div>
+    <div class="background">
+        <div class="locations">
+            <p>Friend's Location</p>
+            <div id="locationField">
+                <input id="autocomplete" placeholder="Enter your friend's address" onFocus="geolocate()" type="text"></input>
+            </div>
+            <br>
+            <button id="halfway" class="btn-large waves-effect waves-light" type="submit" name="action">Find Them!</button>
+            <div id="listings"></div>
+        </div>
+        <div id="map"></div>
+    </div>
+    <footer class="picker__footer page-footer footer-copywrite modal-footer">
+        <div id="bottom">
+            <p>Something Nice</p>
+            <div class="footer-copywrite">
+                George Eng copywrite
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF8IVxkffX0Yt2A-7Ez_MwG25aGR49GiM&signed_in=true&libraries=places&callback=initialize" async defer>
+</script>
+<script src="script.js"></script>
+
+</html>
